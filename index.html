@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collapsible</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .toggle.ios,
+      .toggle-on.ios,
+      .toggle-off.ios {
+        border-radius: 20rem;
+      }
+      .toggle.ios .toggle-handle {
+        border-radius: 20rem;
+      }
+      .toggle.ios .toggle-on {
+        background-color: #28a745; /* สีเขียว */
+      }
+      .toggle.ios .toggle-off {
+        background-color: #dc3545; /* สีแดง */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper center-block">
+      <div
+        class="panel-group"
+        id="accordion"
+        role="tablist"
+        aria-multiselectable="true"
+      >
+        <div class="panel panel-default">
+          <div class="panel-heading active" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a
+                role="button"
+                data-toggle="collapse"
+                data-parent="#accordion"
+                href="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Collapsible Group Item #1
+              </a>
+            </h4>
+          </div>
+          <div
+            id="collapseOne"
+            class="panel-collapse collapse in"
+            role="tabpanel"
+            aria-labelledby="headingOne"
+          >
+            <div class="panel-body">
+              <table class="table table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>25</td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        checked
+                        data-toggle="toggle"
+                        data-style="ios"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Jane</td>
+                    <td>Smith</td>
+                    <td>30</td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        checked
+                        data-toggle="toggle"
+                        data-style="ios"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sam</td>
+                    <td>Johnson</td>
+                    <td>22</td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        checked
+                        data-toggle="toggle"
+                        data-style="ios"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Lisa</td>
+                    <td>Brown</td>
+                    <td>28</td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        checked
+                        data-toggle="toggle"
+                        data-style="ios"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default mb-2">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a
+                class="collapsed"
+                role="button"
+                data-toggle="collapse"
+                data-parent="#accordion"
+                href="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Collapsible Group Item #2
+              </a>
+            </h4>
+          </div>
+          <div
+            id="collapseTwo"
+            class="panel-collapse collapse"
+            role="tabpanel"
+            aria-labelledby="headingTwo"
+          >
+            <div class="panel-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+              on it squid single-origin coffee nulla assumenda shoreditch et.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+              lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them
+              accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a
+                class="collapsed"
+                role="button"
+                data-toggle="collapse"
+                data-parent="#accordion"
+                href="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Collapsible Group Item #3
+              </a>
+            </h4>
+          </div>
+          <div
+            id="collapseThree"
+            class="panel-collapse collapse"
+            role="tabpanel"
+            aria-labelledby="headingThree"
+          >
+            <div class="panel-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+              on it squid single-origin coffee nulla assumenda shoreditch et.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+              lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them
+              accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
